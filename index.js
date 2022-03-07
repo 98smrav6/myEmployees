@@ -1,6 +1,6 @@
-const Manager  = require("./lib/Manager");
+const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
-const Intern = require(".lib/Intern");
+const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
@@ -14,7 +14,7 @@ const teamMembers = [];
 const idArray = [];
 
 function appMenu() {
-//Creating Manager 
+//Creating Manager//
     function createManager() {
         console.log("Please build your team");
         inquirer.prompt([
@@ -79,7 +79,7 @@ function appMenu() {
     });
 }
 
-//creating Team
+//creating Team//
 
 function createTeam() {
     
@@ -108,7 +108,7 @@ function createTeam() {
     });
 }
 
-//creating Engineer
+//creating Engineer//
 function addEngineer() {
     inquirer.prompt([
 {
@@ -174,7 +174,7 @@ function addEngineer() {
     });
 }
 
-//creating Intern
+//creating Intern//
 function addIntern() {
     inquirer.prompt([
         {
@@ -224,7 +224,7 @@ function addIntern() {
         type: "input",
         name: "internSchool",
         message: "What is your intern's school?",
-        validate: asnwer => {
+        validate: answer => {
             if (answer !== "") {
                 return true;
             }
