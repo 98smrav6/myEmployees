@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/98smrav6/myEmployees/issues"
   },
-  "homepage": "https://github.com/98smrav6/myEmployees#readme"
+  "homepage": "https://github.com/98smrav6/myEmployees#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
 }
