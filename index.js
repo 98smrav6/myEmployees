@@ -14,7 +14,7 @@ const teamMembers = [];
 const idArray = [];
 
 function appMenu() {
-    
+//Creating Manager 
     function createManager() {
         console.log("Please build your team");
         inquirer.prompt([
@@ -78,4 +78,38 @@ function appMenu() {
         createTeam();   
     });
 }
+
+//creating Team
+
+function createTeam() {
+    
+    inquirer.prompt([
+        {
+            type: "list",
+            name: "memberChoice",
+            message: "Which type of team member would you like to add?",
+            choices: [
+                "Engineer",
+                "Intern",
+                "I don't want to add any more team members"
+            ]
+        }
+    ]).then(userChoice => {
+        switch (userChoice.memberChoice) {
+            case "Engineer":
+                addEngineer();
+                break;
+            case "Intern":
+                addIntern();
+                break;
+            default:
+                buildTeam();
+        }
+    });
+}
+
+
+
+
+
 }
