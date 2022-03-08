@@ -30,3 +30,6 @@
 
 **Website is then generated and should look like this:**
 ![image](https://user-images.githubusercontent.com/89051027/157139133-c33eb904-c968-4328-af54-6e18864e7eab.png)
+
+
+Live video of generator: https://drive.google.com/file/d/19_d4YF8bCRX_AArnjgVG8C4KruAMe_zZ/view
